@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
     <title>desafio-02-Landing-page-2</title>
 </head>
-<body class="flex">
-    <header class="flex-col h-screen">
-        <div class="flex-1 h-full w- bg-blue-500">1</div>
-        <div class="flex-1 h-full bg-red-500">2</div>
-        <div class="flex-1 h-full bg-green-500">3</div>
-        <div class="flex-1 h-full bg-yellow-500">4</div>
-        <div class="flex-1 h-full bg-purple-500">5</div>
-        <div class="flex-1 h-full bg-pink-500">6</div>
+
+<body class="bg-[#0C243E] flex flex-col h-screen ">
+    <header class="border-[#4C5A7D] flex h-screen border-b-4 border-solid ">
+        <div class="border-[#4C5A7D] flex flex-col w-24 border-[1px] border-solid ">
+            <div class="flex flex-col justify-end gap-5 h-full mb-7 ml-5">
+                <img class= "min-w-2 min-h-2 max-w-6 max-h-10" src="imagens/icon-twitter.jpg">
+                <img class= "min-w-2 min-h-2 max-w-6 max-h-10" src="imagens/icon-discord.jpg">
+                <img class= "min-w-2 min-h-2 max-w-6 max-h-10" src="imagens/icon-instagram.jpg">
+            </div>
+        </div>
+
+        <div class="border-[#4C5A7D] flex flex-col  w-2/6 justify-between h-full border-[1px] border-solid ">
+            <p class="text-white mt-6 ml-4 ">CHIMP.NFT</p>
+
+            <div class="flex">
+                <h1 class="text-[#EA89DD] text-8xl -rotate-90 leading-[80px]">
+                    <p class="text-3xl">2024</p>
+                    NFT IS <br>
+                    HERE</h1>
+            </div>
+
+            <p class="text-white ">A Unique Digital Collection Of <br>
+                Diverse NFT's Lying Ethereum <br>
+                Blockchain</p>
+                
+            <button class="flex justify-center mb-10 w-52 ml-20 bg-[#f3a6eb] text-white">Explore NFT's</button>
+
+        </div>
+
+        <div class="w-2/6 border-[1px] border-solid border-[#4C5A7D]">3</div>
+        <div class="w-2/6 border-[1px] border-solid border-[#4C5A7D]">4</div>
+        <div class="w-2/6 border-[1px] border-solid border-[#4C5A7D]">5</div>
+        <div class="w-24 border-[1px] border-solid border-[#4C5A7D]">6</div>
     </header>
 </body>
+
 </html>
