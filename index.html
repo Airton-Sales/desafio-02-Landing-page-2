@@ -26,67 +26,65 @@
         border-top-left-radius: 20% 40%;
         border-bottom-left-radius: 5% 15%;
         font-weight: 700;
-        border: #f1b 2px solid;
         }
     </style>
     <title>desafio-02-Landing-page-2</title>
 </head>
 <body class="bg-[#0A1F3B] flex flex-col h-screen w-screen ">
     <div class="absolute top-[45%] left-[50%] translate-x-[-50%] translate-y-[-50%]"> <!--circulo-->
-        <div class="w-[500px] h-[500px] rounded-[50%] bg-[#242b46d5] border-[1px] border-solid border-[#414d6b44]"></div>
+        <div class="hover:scale-110 hover:bg-[#ff11bcc4] w-[500px] h-[500px] rounded-[50%] bg-[#242b46d5] border-[1px] border-solid border-[#414d6b44]"></div>
     </div>
     <img class="absolute w-[28%] mt-[4%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" src="imagens/imagem-principal-1.png"> <!--imagem principal do macaco-->
     <header class="border-[#4c5a7dfb] flex h-screen border-b-4 border-solid ">
         <div class="border-[#4c5a7d8e] flex flex-col w-24 border-[1px] border-solid ">
             <img class="flex min-w-3 min-h-10 max-w-9 max-h-12 mt-4 ml-4"src="imagens/icon-macaco.jpg" alt="">
             <div class="flex flex-col justify-end gap-5 h-full mb-7 ml-5"> <!--imagens dos ícones-->
-                <img class= "min-w-2 min-h-2 max-w-6 max-h-10" src="imagens/icon-twitter.jpg">
-                <img class= "min-w-2 min-h-2 max-w-6 max-h-10" src="imagens/icon-discord.jpg">
-                <img class= "min-w-2 min-h-2 max-w-6 max-h-10" src="imagens/icon-instagram.jpg">
+                <a href="#"><img class= "min-w-2 min-h-2 max-w-6 max-h-10" src="imagens/icon-twitter.jpg"></a>
+                <a href="#"><img class= "min-w-2 min-h-2 max-w-6 max-h-10" src="imagens/icon-discord.jpg"></a>
+                <a href="#"><img class= "min-w-2 min-h-2 max-w-6 max-h-10" src="imagens/icon-instagram.jpg"></a>
             </div>
         </div>
         <div class="border-[#4c5a7d8e] flex flex-col  w-2/6 justify-between  h-full border-[1px] border-solid ">
-            <p class="text-white mt-6 ml-4 ">CHIMP.NFT</p>
+            <a href="#">
+                <nav class="text-white mt-6 ml-4 "><span class="hover:text-[#f1b]">CHIMP.NFT</span></nav>
+            </a>
 
             <div class="flex">
-                <h1 class="text-[#f1b] text-[100px]  -rotate-90 leading-[80px]">
+                <h1 class="text-[#f1b] text-[7rem] font-black  -rotate-90 leading-[100px]">
                     <p class="text-4xl">2024</p>
-                    NFT IS <br>
-                    HERE</h1>
+                    NFT IS HERE</h1>
             </div>
             <div class="flex justify-center ">
                 <p class="text-[#e9b7e2] ">A Unique Digital Collection Of <br>
                     Diverse NFT's Lying Ethereum <br>
                     Blockchain</p>
-            </div>
-
-           
-                <button id="botao" class="flex justify-center items-center ml-14 mb-[22%] text-[#f1b] hover:bg-gradient-to-tr from-[#ecb2dc] via-[#f314d5] to-[#f082d1] hover:text-white">Explore NFT's</button>
-                
-
-
-
+            </div> <!--botão-->
+                <button id="botao" class="flex justify-center items-center ml-14 mb-[22%] text-[#f1b] hover:bg-gradient-to-tr from-[#ecb2dc] via-[#f314d5] to-[#f082d1] hover:text-white hover:scale-125 transition-all">Explore NFT's</button>
         </div>
         <nav class="w-2/6 border-[1px] border-solid border-[#4c5a7d8e]"> <!--navbar-->
-            <div class="flex justify-end text-white mr-4 mt-6 ">NFT's &nbsp &nbsp &nbsp &nbsp Community</div>
+            <a href="#">
+                <div class="flex justify-end text-white mr-4 mt-6 "><span class="hover:text-[#f1b]">NFT's</span> &nbsp &nbsp &nbsp &nbsp <span class="hover:text-[#f1b]">Community</span></div>
+            </a>
         </nav>
         <nav class="w-2/6 border-[1px] border-solid border-[#4c5a7d8e]">
-            <div class="text-white ml-8 mt-6">Roadmap &nbsp &nbsp &nbsp Faq's</div>
+            <a href="#">
+                <div class="text-white ml-8 mt-6"><span class="hover:text-[#f1b]">Roadmap</span> &nbsp &nbsp &nbsp <span class="hover:text-[#f1b]">Faq's</span></div>
+            </a>
         </nav>
         <div class="w-2/6 border-[1px] border-solid border-[#4c5a7d8e]">  <!--imagens dos 3 macacos-->
             <div class="flex flex-col justify-center items-center gap-5 h-full">
-                <div>
+                <button class="hover:scale-125 transition-all">
                     <img src="imagens/macaco-1.1.png">
                     <p class="text-[#f1b]">Chimp #29 &nbsp &nbsp &nbsp &nbsp <span class="text-white">20.5 ETH</span></p>
-                </div>
-                <div>
+                </button>
+                <button class="hover:scale-125 transition-all">
                     <img class="w-[180px]"src="imagens/macaco-2.2.png">
                     <p class="text-[#f1b]">Chimp #32 &nbsp &nbsp &nbsp &nbsp <span class="text-white">19.2 ETH</span></p>
-                </div>
-                <div>
+                </button>
+                <button class="hover:scale-125 transition-all">
                     <img src="imagens/macaco-3.3.png">
                     <p class="text-[#f1b]">Chimp #33 &nbsp &nbsp &nbsp &nbsp <span class="text-white">16.8 ETH</span></p>
-                </div>
+                </button>
              </div>
         </div>
         <div class="w-24 border-[1px] border-solid border-[#4c5a7d8e]"></div>
